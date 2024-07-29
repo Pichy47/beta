@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVAROBOTICS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo form.css">
+</head>
+<body>
+    <div class="PACIFICO">
+        <h1>NAVAROBOTIC'S</h1>
+        <h2>INNOVACIÓN EN TI</h2>
+    </div>
+
+    <nav>
+        <ul class="NAVI">
+            <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/PAGINA%20WEB%20PERSONAL.html" class="LI__LINK">INICIO</a></li>
+            <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/biografia.html"               class="LI__LINK">SOBRE MI</a></li>
+            <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/Operaciones.html"             class="LI__LINK">CONSEJOS</a></li>
+            <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/formulario.html"              class="LI__LINK">COMENTARIOS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Formulario de Contacto</h2>
+    </header>
+
+    <div class="formulario">
+        <form action="tu_script_de_procesamiento.php" method="POST">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br>
+
+            <label for="correo">Correo:</label><br>
+            <input type="text" id="correo" name="correo" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"><br>
+
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion" required><br>
+
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea id="comentarios" name="comentarios" required></textarea><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NAVAROBOTIC'S. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

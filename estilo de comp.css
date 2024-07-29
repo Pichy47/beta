@@ -1,0 +1,74 @@
+body {
+    color: #fff;
+    margin: 0;
+}
+
+.PACIFICO {
+    font-family: 'Pacifico', cursive;
+    background-color: #5f1dba;
+    padding: 4px 9px;
+    text-align: center;
+    line-height: 20px;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 2px;
+}
+
+nav {
+    background-color: #fff;
+    margin: 0;
+    text-align: center;
+    padding: 6px;
+}
+
+.LI__ITEM {
+    display: inline-block;
+    padding: 5px;
+}
+
+.LI__LINK {
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.LI__ITEM:hover {
+    background-color: #80f6;
+    border-radius: 10%;
+}
+
+.section {
+    background-color: #5f1dba;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img-left {
+    float: left;
+    margin-right: 20px;
+    max-width: 200px;
+    height: 270px;
+
+}
+
+.content-right {
+    overflow: hidden;
+}
+
+.section h3 {
+    font-size: 24px;
+    text-align: left;
+}
+
+.section p {
+    font-size: 18px;
+    text-align: justify;
+    padding: 10px;
+}
+

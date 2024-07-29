@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVAROBOTICS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body {
+            color: #fff;
+            margin: 0;
+        }
+
+        .PACIFICO {
+            font-family: 'Pacifico', cursive;
+            background-color: #5f1dba;
+            padding: 4px 9px;
+            text-align: center;
+            line-height: 20px;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 35px;
+            padding: 2px;
+        }
+
+        nav {
+            background-color: #fff;
+            margin: 0;
+            text-align: center;
+            padding: 6px;
+        }
+
+        .LI__ITEM {
+            display: inline-block;
+            padding: 5px;
+        }
+
+        .LI__LINK {
+            text-decoration: none;
+            padding: 30px;
+            font-size: 20px;
+        }
+
+        .LI__ITEM:hover {
+            background-color: #80f6;
+            border-radius: 10%;
+        }
+
+        .section {
+            background-color: #5f1dba;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+            font-family: Arial, sans-serif; /* Cambio de la fuente de letra */
+        }
+
+        .section h3 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .section p {
+            font-size: 18px;
+            text-align: justify;
+            padding: 10px;
+        }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+    </style>
+</head>
+<body>
+    <div class="PACIFICO">
+        <h1>NAVAROBOTIC'S</h1>
+        <h2>INNOVACIÓN EN TI</h2>
+    </div>
+
+    <nav>
+        <ul class="NAVI">
+             <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/PAGINA%20WEB%20PERSONAL.html" class="LI__LINK">INICIO</a></li>
+            <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/biografia.html"               class="LI__LINK">SOBRE MI</a></li>
+           <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/proyectos.html"            class="LI__LINK">PROYECTOS</a></li>
+            <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/formulario.html"              class="LI__LINK">COMENTARIOS</a></li>
+        </ul>
+    </nav>
+
+    <div class="section">
+        <h3>¿Cómo hacer un semáforo con Arduino?</h3>
+        <p>En este pequeño proyecto realizaremos la simulación de la secuencia de luces de un semáforo con Arduino, lo que nos servirá para practicar con las sentencias de salidas digitales y retardos.</p>
+        <p> Nuestro semaforo consiste en:</p>
+
+
+<ul>
+            <li>LED verde enciende por 5 segundos</li>
+            <li>Verde parpadea 3 veces y se apaga</li>
+            <li>LED Amarillo enciende 2 segundos y luego se apaga</li>
+            <li>LED rojo enciende por 5 segundos y luego se apaga</li>
+            <li>Una vez terminada esta secuencia todo debe volver a repetirse</li>
+           
+         </ul>
+    </div>
+
+    <div class="section">
+        <h3>Materiales para el proyecto</h3>
+       
+      
+        <ul>
+            <li>Arduino Uno R3 (o tarjeta compatible con Arduino Uno R3)</li>
+            <li>Protoboard de 400 puntos</li>
+            <li>3 resistencias de 330 ohms 1/4 W</li>
+            <li>LED difuso 5 mm o LED ultra brillante 5mm.</li>
+            <li>Verde</li>
+            <li>Amarillo</li>
+            <li>Rojo</li>
+            <li>Cables dupont o jummpers</li>
+            <li>Cable USB para arduino tipo A – B</li>
+        </ul>
+<p>De manera alternativa podemos utilizar el módulo de semáforo con LEDs que facilita la conexión del circuito al incluir las resistencias necesarias dentro del circuito impreso.</p>
+<p>Para alimentar nuestros proyectos con Arduino puede resultar conveniente adquirir una fuente de alimentación o eliminador o adaptador AC-DC 1A, de forma que el circuito pueda funcionar sin la necesidad de una conexión USB con la computadora.</p>
+    </div>
+ 
+      <div class="section">
+        <h3>Circuito para semáforo con Arduino</h3>
+        <p>Podemos utilizar el siguiente diagrama para realizar el armado de el circuito para semáforo con Arduino en un protoboard.</p>
+        <div style= "text-align:center;">
+        <img src="C:\Users\PICHY\Documents\INFORMATICA 2024 GRADUANDO\INFORMATICA II PARCIAL 2024\DISEÑO WEB\TAREAS\INDEX\PAGINA PERSONAL\img sitio webs/c5.png" alt="Diagrama">
+        </div>
+        <p>También podemos colocar el módulo de semáforo miniatura con LEDS directamente en los pines GND, D13, D12 y D11.</p>
+          <div Style="Text-Align: center;">
+          <img src="C:\Users\PICHY\Documents\INFORMATICA 2024 GRADUANDO\INFORMATICA II PARCIAL 2024\DISEÑO WEB\TAREAS\INDEX\PAGINA PERSONAL\img sitio webs/a5.jpg" alt="Modulo de Semaforo">
+          </div>
+    </div>
+
+     <div class="section">
+        <h3>Código para semáforo con Arduino</h3>
+        <div style="Text-Align: center;">
+        <img src="C:\Users\PICHY\Documents\INFORMATICA 2024 GRADUANDO\INFORMATICA II PARCIAL 2024\DISEÑO WEB\TAREAS\INDEX\PAGINA PERSONAL\img sitio webs/cd1.png" alt="Codigo"> 
+        </div>
+          <div style="Text-Align: center;">
+        <img src="C:\Users\PICHY\Documents\INFORMATICA 2024 GRADUANDO\INFORMATICA II PARCIAL 2024\DISEÑO WEB\TAREAS\INDEX\PAGINA PERSONAL\img sitio webs/cd2.png" alt="Codigo"> 
+        </div>
+ <p>Basados en este código podemos crear secuencias de luces a nuestro gusto modificando los tiempos y combinaciones de pines.</p>
+ <p>Con esto Finalizamos este pequeño proyecto facil de hacer, si tienes mas dudas acerca de algun procedimiento puedes contactarme en el apartado de "Comentarios".
+</div>
+
+    
+
+ 
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAVAROBOTICS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo operaciones.css">
+
+    <style>
+        .imagen {
+            position: relative;
+        }
+
+        .imagen .info {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+
+
+        .imagen:hover .info {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="PACIFICO">
+        <h1>NAVAROBOTIC'S</h1>
+        <h2>INNOVACIÓN EN TI</h2>
+    </div>
+
+    <nav>
+        <ul class="NAVI">
+            <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/PAGINA%20WEB%20PERSONAL.html" class="LI__LINK">INICIO</a></li>
+            <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/biografia.html"               class="LI__LINK">SOBRE MI</a></li>
+            <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/Operaciones.html"             class="LI__LINK">CONSEJOS</a></li>
+            <li class="LI__ITEM"><a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/formulario.html"              class="LI__LINK">COMENTARIOS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Elige el Proyecto de tu  interés:</h2>
+    </header>
+
+    <div class="contenido">
+        <div class="imagen">
+            <a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/casa%20domotica.html"><img src="C:/Users/PICHY/Documents/INFORMATICA 2024 GRADUANDO/INFORMATICA II PARCIAL 2024/DISEÑO WEB/TAREAS/INDEX/PAGINA PERSONAL/img sitio webs/d3.jpeg"></a>
+            <h3>Casa Domotica</h3>
+            <div class="info">Al dar un Aplauso las luces de la casa se encenderan</div>
+        </div>
+        <div class="imagen">
+            <a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/hisotira%20de%20arduino.html"><img src="C:/Users/PICHY/Documents/INFORMATICA 2024 GRADUANDO/INFORMATICA II PARCIAL 2024/DISEÑO WEB/TAREAS/INDEX/PAGINA PERSONAL/img sitio webs/a4.jpg"></a>
+            <h3>HISTORIA DEL ARDUINO</h3>
+            <div class="info">Conoce la historia del Arduino</div>
+        </div>
+        <div class="imagen">
+            <a href="file:///C:/Users/PICHY/Documents/INFORMATICA%202024%20GRADUANDO/INFORMATICA%20II%20PARCIAL%202024/DISE%C3%91O%20WEB/TAREAS/INDEX/PAGINA%20PERSONAL/semaforo.html"><img src="C:/Users/PICHY/Documents/INFORMATICA 2024 GRADUANDO/INFORMATICA II PARCIAL 2024/DISEÑO WEB/TAREAS/INDEX/PAGINA PERSONAL/img sitio webs/sm1.jpg" ></a>
+            <h3>Semaforo Automatizado</h3>
+            <div class="info">Crea tu propio semaforo</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 NAVAROBOTICS. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // Este script asegura que las imágenes se enlacen a las páginas correspondientes
+        document.querySelectorAll('.imagen').forEach(item => {
+            item.addEventListener('click', () => {
+                const link = item.querySelector('a');
+                if (link) {
+                    window.location.href = link.href;
+                }
+            });
+        });
+    </script>
+ 
+</body>
+</html>

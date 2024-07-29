@@ -1,0 +1,92 @@
+body {
+    color: #fff;
+
+    margin: 0;
+}
+
+.PACIFICO {
+    font-family: 'Pacifico', cursive;
+    background-color: #5f1dba;
+    padding: 4px 9px;
+    text-align: center;
+    line-height: 20px;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    padding: 2px;
+}
+
+nav {
+    background-color: #fff;
+    margin: 0;
+    text-align: center;
+    padding: 6px;
+}
+
+.LI__ITEM {
+    display: inline-block;
+    padding: 5px;
+}
+
+.LI__LINK {
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+}
+
+.LI__ITEM:hover {
+    background-color: #80f6;
+    border-radius: 10%;
+}
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: blue;
+}
+
+.izquierda {
+    flex-basis: 45%; /* Ajusta el ancho de la izquierda */
+}
+
+.derecha {
+    flex-basis: 45%; /* Ajusta el ancho de la derecha */
+}
+
+/* Estilo para la imagen */
+.derecha img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 650px; /* Ancho máximo de la imagen */
+    height: 450px ;
+}
+
+/* Estilo para el contenido */
+.izquierda h3,
+.izquierda p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.izquierda p {
+    margin-bottom: 15px;
+}
+
+h3 {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
